@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+/* Base styles */
+:root {
+  --primary-color: #4f46e5;
+  --primary-hover: #4338ca;
+  --text-color: #1f2937;
+  --text-light: #6b7280;
+  --background: #ffffff;
+  --background-alt: #f9fafb;
+  --border-color: #e5e7eb;
+  --card-bg: #ffffff;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --transition: all 0.3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dark-mode {
+  --primary-color: #6366f1;
+  --primary-hover: #818cf8;
+  --text-color: #f9fafb;
+  --text-light: #d1d5db;
+  --background: #111827;
+  --background-alt: #1f2937;
+  --border-color: #374151;
+  --card-bg: #1f2937;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background);
+  transition: var(--transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center; /* Add this */
+  justify-content: center; /* Add this */
+  text-align: center; /* Optional: center text */
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px; /* 1.5rem = 24px */
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  display: flex; /* Add this */
+  flex-direction: column; /* If you have multiple children */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+}
+
+section {
+  padding:0; /* 5rem = 80px */
+}
+
+.section-title {
+  font-size: 32px; /* 2rem = 32px */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 48px; /* 3rem = 48px */
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -8px; /* 0.5rem = 8px */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+  /* background-color: red; */
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px; /* 0.75rem 1.5rem = 12px 24px */
+  border-radius: 6px; /* 0.375rem = 6px */
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+  font-size: 16px; /* 1rem = 16px */
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-primary:hover {
+  /* background-color: var(--primary-hover); */
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--primary-hover);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
 }
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+ @media (max-width: 768px) {
+  .section-title {
+    font-size: 28px;
+  }
+} 
