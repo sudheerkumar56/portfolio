@@ -1,5 +1,5 @@
 import "./About.css"
-import profileImage from "../assets/1740717733466.jpg" // Replace with your actual path
+import profileImage from "../assets/1740717733466.jpg" 
 
 function About() {
   return (

@@ -22,7 +22,7 @@ function App() {
   const toggleDarkMode = () => {
     setDarkMode(prevMode => !prevMode);
     const newTheme = !darkMode ? 'dark' : 'light';
-    localStorage.setItem('theme', newTheme); // Save theme preference to localStorage
+    localStorage.setItem('theme', newTheme); 
   };
 
   useEffect(() => {

@@ -1,57 +1,57 @@
 .education {
   background-color: var(--background);
-  padding: 64px 0; /* 4rem → 64px */
+  padding: 64px 0; 
 }
 
 .education-container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 20px; /* Optional: Added padding for mobile responsiveness */
+  padding: 0 20px;
 }
 
 .education-card {
   background-color: var(--card-bg);
-  border-radius: 8px; /* 0.5rem → 8px */
-  padding: 32px; /* 2rem → 32px */
+  border-radius: 8px; 
+  padding: 32px; 
   box-shadow: var(--shadow);
   border: 1px solid var(--border-color);
-  margin-bottom: 32px; /* 2rem → 32px */
+  margin-bottom: 32px; 
 }
 
 .degree {
-  font-size: 24px; /* 1.5rem → 24px */
-  margin-bottom: 8px; /* 0.5rem → 8px */
+  font-size: 24px;
+  margin-bottom: 8px; 
   color: var(--text-color);
 }
 
 .university {
   color: var(--text-light);
   font-weight: 500;
-  margin-bottom: 16px; /* 1rem → 16px */
+  margin-bottom: 16px; 
 }
 
 .grade {
   color: var(--primary-color);
   font-weight: 600;
-  margin-bottom: 24px; /* 1.5rem → 24px */
+  margin-bottom: 24px; 
 }
 
 .courses-title {
-  font-size: 18px; /* 1.125rem → 18px */
-  margin-bottom: 16px; /* 1rem → 16px */
+  font-size: 18px; 
+  margin-bottom: 16px; 
   color: var(--text-color);
 }
 
 .courses-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 12px; /* 0.75rem → 12px */
+  gap: 12px; 
 }
 
 .course-item {
   display: flex;
   align-items: center;
-  gap: 8px; /* 0.5rem → 8px */
+  gap: 8px; 
 }
 
 .course-bullet {
@@ -64,7 +64,7 @@
 
 @media (max-width: 768px) {
   .education-container {
-    padding: 0 15px; /* Optional: added padding for mobile responsiveness */
+    padding: 0 15px; 
   }
 
   .courses-grid {

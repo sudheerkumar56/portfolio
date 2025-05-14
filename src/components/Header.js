@@ -7,7 +7,6 @@ function Header({ darkMode, toggleDarkMode }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Handle scroll to change header style
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -23,7 +22,6 @@ function Header({ darkMode, toggleDarkMode }) {
     };
   }, []);
 
-  // Toggle mobile menu
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -35,7 +33,6 @@ function Header({ darkMode, toggleDarkMode }) {
           <a href="#home">Sudheer Kumar</a>
         </div>
 
-        {/* Mobile menu button */}
         <button className="mobile-menu-btn" onClick={toggleMenu}>
           <div className={`hamburger ${menuOpen ? "active" : ""}`}>
             <span></span>
@@ -44,7 +41,6 @@ function Header({ darkMode, toggleDarkMode }) {
           </div>
         </button>
 
-        {/* Navigation */}
         <nav className={`nav ${menuOpen ? "open" : ""}`}>
           <ul className="nav-list">
             <li>
@@ -74,7 +70,6 @@ function Header({ darkMode, toggleDarkMode }) {
             </li>
           </ul>
 
-          {/* Dark Mode Toggle and Contact Button */}
           <div className="nav-buttons">
             <button className="theme-toggle" onClick={toggleDarkMode}>
               {darkMode ? "☀️" : "🌙"}

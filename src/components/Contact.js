@@ -6,7 +6,6 @@ import "./Contact.css"
 function Contact() {
   const formRef = useRef(null)
 
-  // Reset form when component mounts
   useEffect(() => {
     if (formRef.current) {
       formRef.current.reset()

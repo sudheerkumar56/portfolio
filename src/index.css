@@ -130,7 +130,6 @@ button:focus-visible {
   grid-template-columns: repeat(4, 1fr);
 }
 
-/* Responsive Breakpoints */
 @media (max-width: 1024px) {
   .grid-4 {
     grid-template-columns: repeat(2, 1fr);

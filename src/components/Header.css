@@ -1,4 +1,3 @@
-/* Header */
 .header {
   position: fixed;
   top: 0;
@@ -17,14 +16,12 @@
   padding: 12px 0;
 }
 
-/* Header container */
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Logo */
 .logo a {
   font-size: 24px;
   font-weight: 700;
@@ -37,7 +34,6 @@
   color: var(--primary-color);
 }
 
-/* Navbar */
 .nav {
   display: flex;
   align-items: center;
@@ -64,7 +60,6 @@
   color: var(--primary-color);
 }
 
-/* Nav buttons */
 .nav-buttons {
   display: flex;
   align-items: center;
@@ -94,11 +89,11 @@
 }
 
 .contact-btn:hover {
-  background-color: var(--primary-hover);
-  /* color: bisque; */
+  background-color: var(--background);
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
 }
 
-/* Mobile menu button */
 .mobile-menu-btn {
   display: none;
   background: none;
@@ -107,7 +102,6 @@
   padding: 8px;
 }
 
-/* Hamburger styles */
 .hamburger {
   position: relative;
   width: 30px;
@@ -130,7 +124,6 @@
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-/* Hamburger active */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -143,7 +136,6 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .mobile-menu-btn {
     display: block;

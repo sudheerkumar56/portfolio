@@ -9,33 +9,33 @@
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 48px; /* 3rem = 48px */
+  gap: 48px;
 }
 
 .contact-info {
   background-color: var(--card-bg);
-  border-radius: 8px; /* 0.5rem = 8px */
-  padding: 32px; /* 2rem = 32px */
+  border-radius: 8px; 
+  padding: 32px; 
   box-shadow: var(--shadow);
   border: 1px solid var(--border-color);
 }
 
 .contact-info h3 {
-  font-size: 20px; /* 1.25rem = 20px */
-  margin-bottom: 24px; /* 1.5rem = 24px */
+  font-size: 20px;
+  margin-bottom: 24px; 
   color: var(--text-color);
 }
 
 .contact-item {
   display: flex;
   align-items: center;
-  margin-bottom: 16px; /* 1rem = 16px */
+  margin-bottom: 16px; 
 }
 
 .contact-item i {
   color: var(--primary-color);
-  font-size: 20px; /* 1.25rem = 20px */
-  margin-right: 16px; /* 1rem = 16px */
+  font-size: 20px;
+  margin-right: 16px; 
   width: 20px;
 }
 
@@ -51,25 +51,25 @@
 
 .contact-form-container {
   background-color: var(--card-bg);
-  border-radius: 8px; /* 0.5rem = 8px */
-  padding: 32px; /* 2rem = 32px */
+  border-radius: 8px; 
+  padding: 32px; 
   box-shadow: var(--shadow);
   border: 1px solid var(--border-color);
 }
 
 .contact-form-container h3 {
-  font-size: 20px; /* 1.25rem = 20px */
-  margin-bottom: 24px; /* 1.5rem = 24px */
+  font-size: 20px; 
+  margin-bottom: 24px; 
   color: var(--text-color);
 }
 
 .form-group {
-  margin-bottom: 24px; /* 1.5rem = 24px */
+  margin-bottom: 24px;
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 8px; /* 0.5rem = 8px */
+  margin-bottom: 8px;
   font-weight: 500;
   color: var(--text-color);
 }
@@ -77,9 +77,9 @@
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 12px; /* 0.75rem = 12px */
+  padding: 12px; 
   border: 1px solid var(--border-color);
-  border-radius: 6px; /* 0.375rem ≈ 6px */
+  border-radius: 6px; 
   background-color: var(--background);
   color: var(--text-color);
   transition: var(--transition);
@@ -99,6 +99,6 @@
 @media (max-width: 768px) {
   .contact-content {
     grid-template-columns: 1fr;
-    gap: 32px; /* 2rem = 32px */
+    gap: 32px;
   }
 }
