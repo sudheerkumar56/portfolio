@@ -13,9 +13,17 @@ function Education() {
       <div className="container education-container">
         <h2 className="section-title">Education</h2>
         <div className="education-card">
-          <h3 className="degree">Bachelor of Technology in Computer Science Engineering</h3>
           <p className="university">MLR INSTITUTE OF TECHNOLOGY, 2020 - 2024</p>
+          <h3 className="degree">Bachelor of Technology in Computer Science Engineering</h3>
           <p className="grade">Graduated with First Class Honors (CGPA: 7.4/10)</p>
+
+          <p className="university">Narayana Junio College, 2017 - 2019</p>
+          <h3 className="degree">Intermediate</h3>
+          <p className="grade">CGPA: 9.1/10</p>
+
+          <p className="university">S.t.Mary's High School, 2016 - 2017</p>
+          <h3 className="degree">Secondary School Certificate (SSC)</h3>
+          <p className="grade">CGPA: 8.3/10</p>
 
           {/* <h4 className="courses-title">Key Courses:</h4>
           <div className="courses-grid">

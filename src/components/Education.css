@@ -18,13 +18,14 @@
   margin-bottom: 32px; 
 }
 
-.degree {
-  font-size: 24px;
+.university {
+  font-weight: 500;
+  font-size: 20px;
   margin-bottom: 8px; 
   color: var(--text-color);
 }
 
-.university {
+.degree {
   color: var(--text-light);
   font-weight: 500;
   margin-bottom: 16px; 
