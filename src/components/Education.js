@@ -17,7 +17,7 @@ function Education() {
           <h3 className="degree">Bachelor of Technology in Computer Science Engineering</h3>
           <p className="grade">Graduated with First Class Honors (CGPA: 7.4/10)</p>
 
-          <p className="university">Narayana Junio College, 2017 - 2019</p>
+          <p className="university">Narayana Junior College, 2017 - 2019</p>
           <h3 className="degree">Intermediate</h3>
           <p className="grade">CGPA: 9.1/10</p>
 
