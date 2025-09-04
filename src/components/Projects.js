@@ -54,6 +54,15 @@ function Projects() {
     githubLink: "https://github.com/sudheerkumar56/srcars.git",
     demoLink: "#"
   },
+  {
+    title: "Freelance Developer",
+    description:
+      "Built responsive UI in React.js for booking tests and accessing reports. Designed interactive lab cards with real-time availability and pricing. Integrated OTP login, Razorpay payments, and smooth booking flow.",
+    technologies: ["React.js", "JavaScript", "Razorpay"],
+    image: commerce,
+    githubLink: "#",
+    demoLink: "#"
+  },
 ]
 
   return (
